@@ -1,6 +1,4 @@
-/* screenshto 
-dont
-fuck fuck fuck .dont fuck my css. */ 
+/* my peronal style css */ 
 
         /* Existing styles remain unchanged until .screenshot-popup */
         .screenshots {
@@ -131,19 +129,7 @@ fuck fuck fuck .dont fuck my css. */
     
     
     
-    /*
-    
-dlbtn 
-dont
-fuck fuck fuck .dont fuck my css. */ 
-
-
-
-
-
-
-
-.dldCo {
+    .dldCo {
             --boxC: #08102b;
             --boxBg: #fffdfc;
             --fontF: inherit;
@@ -222,14 +208,4 @@ fuck fuck fuck .dont fuck my css. */
         }
         .popup-ok { background: #482dff; color: white; }
         .popup-cancel { background: #e91e63; color: white; }
-        
-        
-        
-        
-    
-    
-    
-    
-
-
-
+   

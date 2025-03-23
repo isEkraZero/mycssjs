@@ -1,3 +1,5 @@
+// dl btn . dont fuck my js
+
 function showPopupForDevice(id, encodedSuffix) {
             if (!encodedSuffix) return;
             let suffix = atob(encodedSuffix); // Decode the encoded suffix
@@ -73,8 +75,13 @@ function showPopupForDevice(id, encodedSuffix) {
         
         
         
-        
-    document.addEventListener("DOMContentLoaded", function () {
+
+
+
+
+//screnshtot js . don fuck my js
+
+document.addEventListener("DOMContentLoaded", function () {
     const gallery = document.querySelector(".screenshot-gallery");
     const images = document.querySelectorAll(".screenshot-gallery img");
     const popup = document.getElementById("screenshotPopup");
