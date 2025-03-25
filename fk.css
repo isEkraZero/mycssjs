@@ -1,135 +1,221 @@
-/* my peronal style css */ 
 
-        /* Existing styles remain unchanged until .screenshot-popup */
-        .screenshots {
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            margin: 20px auto;
-            max-width: 1200px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
 
-        .screenshots h2 {
-            font-size: 24px;
-            font-weight: 500;
-            color: #202124;
-            margin: 0 0 16px 16px;
-        }
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
 
-        .screenshot-gallery {
-            display: flex;
-            overflow-x: auto;
-            overflow-y: hidden;
-            gap: 8px;
-            padding: 0 16px 16px 16px;
-            scroll-behavior: smooth;
-            scroll-snap-type: x proximity;
-            -webkit-overflow-scrolling: touch;
-            max-width: 100%;
-            white-space: nowrap;
-        }
+.app-icon {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+    background-color: #3a3a3a;
+}
 
-        .screenshot-gallery::-webkit-scrollbar {
-            display: none;
-        }
+.app-icon img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 28px;
+}
 
-        .screenshot-gallery {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
+.app-details {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+    border-collapse: collapse;
+}
 
-        .screenshot-gallery img {
-            width: 250px;
-            height: 500px;
-            object-fit: cover;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            flex-shrink: 0;
-            scroll-snap-align: start;
-            transition: transform 0.2s ease-in-out;
-            cursor: pointer;
-        }
+.app-details td {
+    padding: 10px;
+    border: 1px dashed rgba(211, 211, 211, 0.763);
+}
 
-        .screenshot-gallery img:hover {
-            transform: scale(1.02);
-        }
+.section {
+    max-width: 1200px;
+    margin: 20px auto;
+}
 
-        @media (min-width: 768px) {
-            .screenshot-gallery {
-                max-width: 1000px;
-                margin: 0 auto;
-            }
-            .screenshot-gallery img {
-                width: 200px;
-                height: 400px;
-            }
-        }
+.section-title {
+    padding: 10px;
+    font-size: 24px;
+    color: #333;
+}
 
-        /* Popup styles with navigation arrows */
-        .screenshot-popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
+.wrap-text {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
 
-        .popup-image {
-            max-width: 80%;
-            max-height: 80%;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
+/* Screenshot Section */
+.screenshots {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 40px;
-            color: #fff;
-            cursor: pointer;
-            font-weight: bold;
-            background-color: #5a5757;
-            
-            
-        }
+.screenshot-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    white-space: nowrap;
+}
 
-        /* Navigation arrows */
-        .nav-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 40px;
-            color: #fff;
-            cursor: pointer;
-            font-weight: bold;
-            user-select: none;
-            background-color: #5a5757;
-        }
+.screenshot-gallery::-webkit-scrollbar {
+    display: none;
+}
 
-        .prev-arrow {
-            left: 30px;
-        }
+.screenshot-gallery img {
+    width: 250px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
 
-        .next-arrow {
-            right: 30px;
-        }
+.screenshot-gallery img:hover {
+    transform: scale(1.02);
+}
 
-        .nav-arrow:hover {
-            color: #ddd;
-        }
-    
-    
-    
-    
-    .dldCo {
+.progress-bar-container {
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #5ba9ee;
+    transition: width 0.2s;
+    border-radius: 50px;
+}
+
+/* Popup Styles */
+.screenshot-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-image {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.763);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.prev-arrow { left: 30px; }
+.next-arrow { right: 30px; }
+.prev-arrow:hover { background-color: #fff; color: #f33b25; }
+.next-arrow:hover { background-color: #fff; color: #00cc00; }
+
+/* Download Section */
+.download-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5ba9ee;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #3b8cd4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .app-icon, .app-details {
+        min-width: 100%;
+    }
+
+    .app-icon img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .screenshot-gallery img {
+        width: 150px;
+        height: 300px;
+    }
+}
+
+
+
+
+
+.dldCo {
             --boxC: #08102b;
             --boxBg: #fffdfc;
             --fontF: inherit;
@@ -208,4 +294,3 @@
         }
         .popup-ok { background: #482dff; color: white; }
         .popup-cancel { background: #e91e63; color: white; }
-   
