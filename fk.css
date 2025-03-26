@@ -1,5 +1,5 @@
-
-
+/*   //dont fuck my personal css code  */
+/* ___________________________________*/
 .app-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -10,7 +10,6 @@
     flex-wrap: wrap;
     overflow: hidden;
 }
-
 .app-icon {
     flex: 1;
     min-width: 200px;
@@ -18,37 +17,33 @@
     padding: 20px;
     background-color: #3a3a3a;
 }
-
 .app-icon img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 28px;
 }
-
 .app-details {
     flex: 2;
     min-width: 300px;
     padding: 20px;
     border-collapse: collapse;
 }
-
 .app-details td {
     padding: 10px;
-    border: 1px dashed rgba(211, 211, 211, 0.763);
+    /* border: 1px dashed rgba(211, 211, 211, 0.763);  */
 }
-
-.section {
+/* this is MF .section destroy my plusIU {
     max-width: 1200px;
     margin: 20px auto;
 }
 
+*/
 .section-title {
     padding: 10px;
     font-size: 24px;
     color: #333;
 }
-
 .wrap-text {
     background-color: #fff;
     border-radius: 10px;
@@ -58,7 +53,6 @@
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-
 /* Screenshot Section */
 .screenshots {
     background-color: #fff;
@@ -66,7 +60,6 @@
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .screenshot-gallery {
     display: flex;
     overflow-x: auto;
@@ -77,11 +70,9 @@
     max-width: 100%;
     white-space: nowrap;
 }
-
 .screenshot-gallery::-webkit-scrollbar {
     display: none;
 }
-
 .screenshot-gallery img {
     width: 250px;
     height: 500px;
@@ -93,11 +84,9 @@
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
 }
-
 .screenshot-gallery img:hover {
     transform: scale(1.02);
 }
-
 .progress-bar-container {
     width: 100%;
     height: 5px;
@@ -105,7 +94,6 @@
     margin-top: 10px;
     border-radius: 50px;
 }
-
 .progress-bar {
     height: 100%;
     width: 0;
@@ -113,7 +101,6 @@
     transition: width 0.2s;
     border-radius: 50px;
 }
-
 /* Popup Styles */
 .screenshot-popup {
     display: none;
@@ -127,14 +114,12 @@
     justify-content: center;
     align-items: center;
 }
-
 .popup-image {
     max-width: 80%;
     max-height: 80%;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 .close-btn {
     position: absolute;
     top: 20px;
@@ -149,7 +134,6 @@
     text-align: center;
     line-height: 40px;
 }
-
 .nav-arrow {
     position: absolute;
     top: 50%;
@@ -160,8 +144,8 @@
     background-color: rgba(0, 0, 0, 0.763);
     padding: 10px;
     border-radius: 5px;
+    z-index: 1100; /* আগের চেয়ে বেশি দিন যাতে সব কিছুর উপরে থাকে */
 }
-
 .prev-arrow { left: 30px; }
 .next-arrow { right: 30px; }
 .prev-arrow:hover { background-color: #fff; color: #f33b25; }
@@ -175,7 +159,6 @@
     padding: 20px;
     text-align: center;
 }
-
 .download-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -185,36 +168,26 @@
     border-radius: 5px;
     transition: background-color 0.3s;
 }
-
 .download-btn:hover {
     background-color: #3b8cd4;
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .app-container {
         flex-direction: column;
     }
-
     .app-icon, .app-details {
         min-width: 100%;
     }
-
     .app-icon img {
         width: 150px;
         height: 150px;
     }
-
     .screenshot-gallery img {
         width: 150px;
         height: 300px;
     }
 }
-
-
-
-
-
 .dldCo {
             --boxC: #08102b;
             --boxBg: #fffdfc;
@@ -226,71 +199,71 @@
             --darkBa: #2d2d30;
             --darkBs: #252526;
         }
-        .dldCo {
+.dldCo {
             -webkit-tap-highlight-color: transparent; position: relative; width: 100%; max-width: 480px; margin: 30px auto; color: var(--boxC); font-family: var(--fontF); transition: margin .6s ease;
         }
-        .dldBx {
+.dldBx {
             position: relative; z-index: 2; background: var(--boxBg); width: 100%; padding: 15px; display: flex; flex-direction: column; font-size: 14px; border-radius: 10px; box-shadow: 0 0 35px rgba(0,0,0,.09);
         }
-        .dldTp { display: flex; flex-direction: row; }
-        .dldIm {
+.dldTp { display: flex; flex-direction: row; }
+.dldIm {
             position: relative; flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; padding: 10px; margin-right: 15px; background: rgba(0,0,0,.08); border-radius: 6px; transition: all .4s ease;
         }
-        .dldIm::before { content: attr(data-text); opacity: .7; }
-        .dldIm[style]:not([style='']) {
+.dldIm::before { content: attr(data-text); opacity: .7; }
+.dldIm[style]:not([style='']) {
             width: 100px; height: 100px; background-size: cover; background-position: center; background-repeat: no-repeat; box-shadow: 0 0 10px rgba(0,0,0,.1);
         }
-        .dldIm[style]:not([style=''])::before { display: none; }
-        .dldSv {
+.dldIm[style]:not([style=''])::before { display: none; }
+.dldSv {
             opacity: 0; position: absolute; width: calc(100% + 12px); height: calc(100% + 12px); top: -6px; bottom: -6px; right: -6px; left: -6px; transform: rotate(-90deg); stroke-width: 1.5; transition: all .5s ease;
         }
-        .dldIm[style]:not([style='']) .dldSv {
+.dldIm[style]:not([style='']) .dldSv {
             width: calc(100% + 20px); height: calc(100% + 20px); top: -10px; bottom: -10px; right: -10px; left: -10px;
         }
-        .dldSv .b { fill: none; stroke: #e6e6e6; opacity: .9; }
-        .dldSv .c { fill: none; stroke: var(--btnBg); stroke-dasharray: 100 100; stroke-dashoffset: 100; stroke-linecap: round; transition: all .5s ease; }
-        .dldIn { flex-grow: 1; width: calc(100% - 115px); }
-        .dldIn > * { line-height: 20px; font-size: 14px; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .dldIn > *::before { content: attr(data-text) ': '; opacity: .8; }
-        .dldBt {
-            background: var(--btnBg); position: absolute; width: 40px; height: 40px; bottom: -20px; right: 20px; outline: none; border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 15px rgba(0,0,0,.09); transition: all .3s ease; cursor: pointer;
-        }
-        .dldBt:hover { transform: scale(1.03); }
-        .dldBt svg { width: 24px; height: 24px; fill: none; stroke: var(--svgS); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.2; }
-        .dldBt.dldDl { visibility: visible; opacity: 1; }
-        .dldBt.dldRt { visibility: hidden; opacity: 0; bottom: -40px; }
-        .dldSl {
+.dldSv .b { fill: none; stroke: #e6e6e6; opacity: .9; }
+.dldSv .c { fill: none; stroke: var(--btnBg); stroke-dasharray: 100 100; stroke-dashoffset: 100; stroke-linecap: round; transition: all .5s ease; }
+.dldIn { flex-grow: 1; width: calc(100% - 115px); }
+.dldIn > * { line-height: 20px; font-size: 14px; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+ .dldIn > *::before { content: attr(data-text) ': '; opacity: .8; }
+.dldBt {
+      background: var(--btnBg); position: absolute; width: 40px; height: 40px; bottom: -20px; right: 20px; outline: none; border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 15px rgba(0,0,0,.09); transition: all .3s ease; cursor: pointer;
+      }
+.dldBt:hover { transform: scale(1.03); }
+.dldBt svg { width: 24px; height: 24px; fill: none; stroke: var(--svgS); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.2; }
+.dldBt.dldDl { visibility: visible; opacity: 1; }
+.dldBt.dldRt { visibility: hidden; opacity: 0; bottom: -40px; }
+.dldSl {
             z-index: 1; position: absolute; bottom: 0; height: 60px; width: 100%; background: var(--boxBg); border-radius: 0 0 10px 10px; transition: all .6s ease;
         }
-        .dldMe {
+.dldMe {
             position: absolute; width: 100%; height: 40px; bottom: 0; display: flex; align-items: center; justify-content: center; font-size: 14px;
         }
-        .dldMe span { color: var(--btnBg); font-size: 18px; font-weight: 600; margin: 0 5px; }
-        .dldCo.dldAlt { margin: 30px auto 70px; }
-        .dldCo.dldAlt .dldIm { transform: scale(.8); border-radius: 50%; }
-        .dldCo.dldAlt .dldSv { opacity: 1; }
-        .dldCo.dldAlt .dldDl { visibility: hidden; opacity: 0; bottom: -40px; }
-        .dldCo.dldRty .dldRt { visibility: visible; opacity: 1; bottom: -20px; }
-        .dldCo.dldAlt .dldSl { bottom: -40px; box-shadow: 0 0 35px rgba(0,0,0,.09); }
-        .darkMode .dldCo { color: var(--darkC); }
-        .darkMode .dldBx { background: var(--darkBs); }
-        .darkMode .dldIm, .darkMode .dldSl { background: var(--darkBa); }
-        .darkMode .dldSv .b { stroke: #404045; }
-        .darkMode .dldSv .c { stroke: var(--darkBt); }
-        .darkMode .dldBt { background: var(--darkBt); }
-        .darkMode .dldMe span { color: var(--darkBt); }
-        .popup-overlay {
+.dldMe span { color: var(--btnBg); font-size: 18px; font-weight: 600; margin: 0 5px; }
+.dldCo.dldAlt { margin: 30px auto 70px; }
+.dldCo.dldAlt .dldIm { transform: scale(.8); border-radius: 50%; }
+.dldCo.dldAlt .dldSv { opacity: 1; }
+.dldCo.dldAlt .dldDl { visibility: hidden; opacity: 0; bottom: -40px; }
+.dldCo.dldRty .dldRt { visibility: visible; opacity: 1; bottom: -20px; }
+.dldCo.dldAlt .dldSl { bottom: -40px; box-shadow: 0 0 35px rgba(0,0,0,.09); }
+.darkMode .dldCo { color: var(--darkC); }
+.darkMode .dldBx { background: var(--darkBs); }
+.darkMode .dldIm, .darkMode .dldSl { background: var(--darkBa); }
+.darkMode .dldSv .b { stroke: #404045; }
+.darkMode .dldSv .c { stroke: var(--darkBt); }
+.darkMode .dldBt { background: var(--darkBt); }
+.darkMode .dldMe span { color: var(--darkBt); }
+.popup-overlay {
             display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 1000; align-items: center; justify-content: center;
         }
-        .popup-content {
+.popup-content {
             background: #fff; padding: 20px; border-radius: 10px; max-width: 500px; width: 90%; max-height: 80vh; overflow-y: auto; position: relative; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
-        .popup-close {
+.popup-close {
             position: absolute; top: 10px; right: 10px; border: none; background: none; font-size: 24px; cursor: pointer;
         }
-        .popup-buttons { margin-top: 20px; text-align: center; }
-        .popup-ok, .popup-cancel {
+.popup-buttons { margin-top: 20px; text-align: center; }
+.popup-ok, .popup-cancel {
             padding: 10px 20px; margin: 0 10px; border: none; border-radius: 5px; cursor: pointer;
         }
-        .popup-ok { background: #482dff; color: white; }
-        .popup-cancel { background: #e91e63; color: white; }
+.popup-ok { background: #482dff; color: white; }
+.popup-cancel { background: #e91e63; color: white; }
